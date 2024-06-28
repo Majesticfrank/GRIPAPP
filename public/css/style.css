@@ -624,16 +624,19 @@ li:hover
     background-color: white;
 }
 
-.gift-card {
-    margin: 20px;
-    text-align: center;
+.gift-card{
+    float: left;
+    height: 200px;
+    width: 250px;
+    border: solid black 2px;
+    margin-left: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
 }
-.gift-card img {
-    width: 150px;
-    height: auto;
+.gift-card img{
+height: 100px;
+
+
 }
-
-
-
-
-

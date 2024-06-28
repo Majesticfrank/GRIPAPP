@@ -18,15 +18,17 @@
         <li><i class="fa-solid fa-credit-card"></i><a href="#" class="trade">Trade Gift Cards</a>
             <div class="dropdown">
               <ul>
-                <li><a href="{{route('dashboardSell')}}">sell</a></li>
+                {{-- <li><a href="{{route('dashboardSell')}}">sell</a></li> --}}
                 <li><a href="#">Calculate Rate</a></li>
               </ul>
             </div> 
         </li>
         <li><i class="fa-solid fa-wallet"></i><a href="#" class="wallet"> Wallet</a></li>
         <li><i class="fa-regular fa-clipboard"></i><a href="#" class="transaction">Transactions</a></li>
-        <li><i class="fa-solid fa-award"></i><a href="#" class="board">LeaderBoard</a></li>
+        <li><i class="fa-solid fa-award"></i><a href="{{route('Creategiftcard')}}" class="board">create Giftcard</a></li>
+      
         <li><i class="fa-solid fa-power-off"></i><form action="{{route('Logout')}}" class="log" method="post"> @csrf <button>Log out</button></form></li>
+
     </ul>
   </div>
  </div>
