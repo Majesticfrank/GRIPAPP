@@ -11,12 +11,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('gift_cards', function (Blueprint $table) {
+        Schema::create('giftcards', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('image')->nullable();
+            $table->string('image');
             $table->timestamps();
         });
+    
     }
 
     /**
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('gift_cards');
+        Schema::dropIfExists('giftcards');
     }
 };

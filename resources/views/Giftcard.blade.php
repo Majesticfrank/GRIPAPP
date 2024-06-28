@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>CREATE GIFT CARD IN DATABASE</h2>
-    <form action="{{route('StoreGiftcard')}}" method="post"> 
+    <form action="{{route('StoreGiftcard')}}" method="post" enctype="multipart/form-data"> 
         @csrf
 <input type="text" name="name">
 <input type="file" name="image" accept="image/*">

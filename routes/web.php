@@ -13,22 +13,23 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/home',[HomeController::class,'home'])->name('home');
-Route::get('/signupview',[SignupController::class,'Signup'])->name('signup');
-Route::get('/viewDashboard',[DashboardController::class,'UserDashboard'])->name('Dashboard');
-Route::get('/AdminDashboard',[DashboardController::class,'Admin_Dashboard'])->name('Adminboard');
 
+Route::get('/signupview',[SignupController::class,'Signup'])->name('signup');
 Route::post('/SignupUser',[SignupController::class,'SignupUser'])->name('Signupuser');
+
 Route::get('/loginview',[LoginController::class,'Login'])->name('login');
 Route::post('/loginUser',[LoginController::class,'LoginUser'])->name('Signin');
 
-Route::post('/logout',[DashboardController::class,'LogOut'])->name('Logout');
+
 Route::get('/emailView',[PasswordResetController::class,'SendEmailview'])->name('SendEmail');
 Route::post('/Resetlink',[PasswordResetController::class,'SendResetLink'])->name('resetlink');
 Route::get('/Resetview',[PasswordResetController::class,'ResetPassword'])->name('PasswordReset');
 
 
 Route::get('/GiftcardCreateview',[GiftcardController::class,'CreateGiftcardview'])->name('Creategiftcard');
-Route::post('/CreateGiftcard',[GiftcardController::class,'storegiftcard'])->name('StoreGiftcard');
+Route::post('/CreateGiftcard',[GiftcardController::class,'Storegiftcard'])->name('StoreGiftcard');
 
-
+Route::get('/viewDashboard',[DashboardController::class,'UserDashboard'])->name('Dashboard');
+Route::get('/AdminDashboard',[DashboardController::class,'Admin_Dashboard'])->name('Adminboard');
+Route::post('/logout',[DashboardController::class,'LogOut'])->name('Logout');
 
