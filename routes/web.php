@@ -17,6 +17,7 @@ Route::post('/SignupUser',[SignupController::class,'SignupUser'])->name('Signupu
 Route::get('/loginview',[LoginController::class,'Login'])->name('login');
 Route::post('/loginUser',[LoginController::class,'LoginUser'])->name('Signin');
 Route::get('/viewDashboard',[DashboardController::class,'UserDashboard'])->name('Dashboard')->middleware();
+Route::get('/Sell',[Dashboardcontroller::class,'Sell_GiftCard'])->name('dashboardSell');
 Route::post('/logout',[DashboardController::class,'LogOut'])->name('Logout');
 Route::get('/emailView',[PasswordResetController::class,'SendEmailview'])->name('SendEmail');
 Route::post('/Resetlink',[PasswordResetController::class,'SendResetLink'])->name('resetlink');

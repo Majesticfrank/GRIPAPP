@@ -15,4 +15,8 @@ class DashboardController extends Controller
         auth()->logout();
         return redirect()->route('login');
     }
+
+    public function Sell_GiftCard(){
+        return view('sell');
+    }
 }

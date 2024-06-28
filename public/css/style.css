@@ -624,6 +624,15 @@ li:hover
     background-color: white;
 }
 
+.gift-card {
+    margin: 20px;
+    text-align: center;
+}
+.gift-card img {
+    width: 150px;
+    height: auto;
+}
+
 
 
 

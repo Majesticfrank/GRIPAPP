@@ -18,7 +18,7 @@
         <li><i class="fa-solid fa-credit-card"></i><a href="#" class="trade">Trade Gift Cards</a>
             <div class="dropdown">
               <ul>
-                <li><a href="#">sell</a></li>
+                <li><a href="{{route('dashboardSell')}}">sell</a></li>
                 <li><a href="#">Calculate Rate</a></li>
               </ul>
             </div> 
