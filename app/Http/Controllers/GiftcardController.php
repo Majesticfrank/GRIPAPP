@@ -29,9 +29,16 @@ class GiftcardController extends Controller
             'name' => $request->name,
             'image' => $request->file('image')->store('images','public'), 
         ];
-        $giftcard = $this->variable->create($giftcardDetails);
+        $giftcards = $this->variable->create($giftcardDetails);
         return redirect()->route('Adminboard')->with('success', 'Giftcard added successfully');
     }
+
+    public function DisplayGiftcard() {
+        $Giftcard = $this->variable->all();
+        // dd($Giftcard);
+        return view('giftcardManagement', ['Giftcard' => $Giftcard]);
+    }
+    
 }
 
 

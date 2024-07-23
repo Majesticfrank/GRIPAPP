@@ -7,7 +7,7 @@ use App\Http\Controllers\SignupController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\GiftcardController;
 use App\Http\Controllers\PasswordResetController;
-
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 Route::get('/', function () {
     return view('welcome');
@@ -28,8 +28,20 @@ Route::get('/Resetview',[PasswordResetController::class,'ResetPassword'])->name(
 
 Route::get('/GiftcardCreateview',[GiftcardController::class,'CreateGiftcardview'])->name('Creategiftcard');
 Route::post('/CreateGiftcard',[GiftcardController::class,'Storegiftcard'])->name('StoreGiftcard');
+// Route::get('/displayGiftcard',[GiftcardController::class,'DisplayGiftcard'])->name('Display.Giftcard');
 
 Route::get('/viewDashboard',[DashboardController::class,'UserDashboard'])->name('Dashboard');
 Route::get('/AdminDashboard',[DashboardController::class,'Admin_Dashboard'])->name('Adminboard');
+
+Route::get('/admin/user-management', [DashboardController::class, 'userManagement'])->name('admin.user-management');
+Route::get('/admin/transaction-management', [DashboardController::class, 'transactionManagement'])->name('admin.transaction-management');
+Route::get('/admin/giftcard-management', [GiftcardController::class,'DisplayGiftcard'])->name('admin.giftcard-management');
+
+
+
+
+
+
+
 Route::post('/logout',[DashboardController::class,'LogOut'])->name('Logout');
 

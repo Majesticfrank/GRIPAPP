@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.side-panel {
+    width: 20%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+}
+
+.side-panel h2 {
+    margin-bottom: 20px;
+}
+
+.side-panel ul {
+    list-style: none;
+}
+
+.side-panel ul li {
+    margin-bottom: 10px;
+}
+
+.side-panel ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    margin-left: 20%;
+    padding: 20px;
+    width: 80%;
+    overflow-y: auto;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.quick-stats {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.quick-stats div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+}
+
+.section {
+    display: none;
+    margin-bottom: 40px;
+}
+
+.section.active {
+    display: block;
+}
+
+.charts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.chart {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.chart h3 {
+    margin-bottom: 10px;
+}
+
+.side-panel-content {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.side-panel-content h3 {
+    margin-bottom: 10px;
+}
+
+.side-panel-content ul {
+    list-style: none;
+}
+
+.side-panel-content ul li {
+    margin-bottom: 10px;
+}
+
+.user-list, .transaction-list, .giftcard-list {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.price-update-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.price-update-form h3 {
+    margin-bottom: 10px;
+}
+
+.price-update-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-update-form label {
+    margin-bottom: 5px;
+}
+
+.price-update-form input, .price-update-form select {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.price-update-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: white;
+}

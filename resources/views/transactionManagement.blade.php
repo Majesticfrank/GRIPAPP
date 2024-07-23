@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>transaction Management</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -17,9 +17,16 @@
         </ul>
     </div>
 
+   
+
+        
+
+        <section id="transaction-management">
+            <h1>Transaction Management</h1>
+            <p>Monitor and manage all transactions.</p>
+        </section>      
+      
     
-        
-        
 </body>
 </html>
  

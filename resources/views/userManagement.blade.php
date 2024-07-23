@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>user Management</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -18,8 +18,11 @@
     </div>
 
     
-        
-        
+
+        <section id="user-management">
+            <h1>User Management</h1>
+            <p>Manage user accounts and their permissions.</p>
+      
 </body>
 </html>
  
